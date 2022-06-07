@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-06-2022 14:56</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-06-2022 22:16</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -91,9 +91,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-3x' title='FAILURE'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                    <span class="failing-color">
+                                    <span class="error-color">
                                     Test004
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -140,13 +140,13 @@
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">Deleting store information with storeID: 0</span>
+                            <span class="top-level-step">Deleting store information with storeID: 5195</span>
                             </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.48s</span></td>
+                    <td width="100"><span class="top-level-step">0.49s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -160,7 +160,7 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">DELETE https://restful-booker.herokuapp.com/booking/0</span>
+                            <span class="nested-group-step">DELETE https://restful-booker.herokuapp.com/booking/5195</span>
 
                                 <span class="rest-query">
                 <span>
@@ -179,11 +179,11 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="restModalLabel">
-                                DELETE https://restful-booker.herokuapp.com/booking/0
+                                DELETE https://restful-booker.herokuapp.com/booking/5195
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                    <p>Status code: 405</p>
+                                    <p>Status code: 201</p>
                                     <p>Content Type: null</p>
                                     <h5>Request Headers</h5>
                                     <pre>Authorization=Basic YWRtaW46cGFzc3dvcmQxMjM=<br>Accept=*/*</pre>
@@ -192,10 +192,10 @@
                                     <h5>Request Cookies</h5>
                                     <pre></pre>
                                     <h5>Response Headers</h5>
-                                    <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: text/plain; charset=utf-8<br>Content-Length: 18<br>Etag: W/&quot;12-UGJMK66P4abaBlq0vKHJaCKuGCA&quot;<br>Date: Tue, 07 Jun 2022 13:56:49 GMT<br>Via: 1.1 vegur</pre>
+                                    <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: text/plain; charset=utf-8<br>Content-Length: 7<br>Etag: W/&quot;7-rM9AyJuqT6iOan/xHh+AW+7K/T8&quot;<br>Date: Tue, 07 Jun 2022 21:16:27 GMT<br>Via: 1.1 vegur</pre>
                                 <h5>Response Body</h5>
                                     <pre>
-                                        Method Not Allowed
+                                        Created
                                     </pre>
                                     <h5>Response Cookies</h5>
                                     <pre></pre>
@@ -219,30 +219,61 @@
                     </table>
                     </td>
                     <tr>
-                <tr class="test-FAILURE">
-                    <td width="40"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i>
+                <tr class="test-ERROR">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 error-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
-                    <td width="%" colspan="1">
-                    <span class="top-level-step">An error occurred outside of step execution.</span>
-                </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0.48s</span></td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">Getting -information with </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.03s</span></td>
                 </tr>
-                <tr class="test-FAILURE">
-                    <td width="40">&nbsp</td>
-                    <td width="%" colspan="3">
-                        <span class="error-message"
-                              title="1 expectation failed. Expected status code (200) but was (405). ">
-                        1 expectation failed. Expected status code (200) but was (405). 
-                            </span>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-ERROR">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">GET </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">ERROR</span></td>
+                    <td width="100"><span class="nested-step">0.01s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                 title='Illegal argument exception: Path parameters were not correctly defined. Redundant path parameters are: BookingId=5195. Undefined path parameters are: bookingId.'>
+                                <pre>Illegal argument exception: Path parameters were not correctly defined. Redundant path parameters are: BookingId=5195. Undefined path parameters are: bookingId.</pre>
+                            </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-overall">
+                            data-target="#stacktraceModal-4">
                         View stack trace
                     </button>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
+                <div class="modal fade" id="stacktraceModal-4" tabindex="-1" role="dialog"
                      aria-labelledby="stacktraceModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -251,21 +282,119 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
+                                java.lang.IllegalArgumentException
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                    <h5>1 expectation failed.<br>Expected status code <200> but was <405>.<br></h5>
-                                io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy
-                                    :636) <br>
-                                io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy
-                                    :122) <br>
-                                io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy
-                                    :130) <br>
-                                io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java
-                                    :117) <br>
+                                    <h5>Path parameters were not correctly defined. Redundant path parameters are: BookingId=5195. Undefined path parameters are: bookingId.</h5>
+                                io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy
+                                    :1336) <br>
+                                groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java
+                                    :325) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1213) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1022) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :810) <br>
+                                io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy
+                                    :-1) <br>
+                                io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy
+                                    :1223) <br>
+                                groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java
+                                    :325) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1213) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1022) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :810) <br>
+                                io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy
+                                    :-1) <br>
+                                io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy
+                                    :30) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.time.TimingFilter.filter(TimingFilter.java
+                                    :56) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java
+                                    :40) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java
+                                    :40) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java
+                                    :40) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java
+                                    :40) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java
+                                    :40) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java
+                                    :124) <br>
+                                net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java
+                                    :40) <br>
+                                io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy
+                                    :72) <br>
+                                io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy
+                                    :1722) <br>
+                                groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java
+                                    :325) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1213) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1022) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :810) <br>
+                                io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy
+                                    :-1) <br>
+                                io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy
+                                    :1728) <br>
+                                groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java
+                                    :325) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1213) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :1022) <br>
+                                groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java
+                                    :810) <br>
+                                io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy
+                                    :-1) <br>
+                                io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy
+                                    :168) <br>
+                                net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java
+                                    :227) <br>
+                                net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java
+                                    :48) <br>
+                                net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java
+                                    :27) <br>
+                                com.herokuapp.booker.restful.restfulinfo.RestfulBookerSteps.getbookingchangesById(RestfulBookerSteps.java
+                                    :88) <br>
                                 com.herokuapp.booker.restful.productinfo.RestfulBookerTestWithSteps.test004(RestfulBookerTestWithSteps.java
-                                    :77) <br>
+                                    :78) <br>
                             </div>
 
                             <div class="modal-footer">
@@ -276,12 +405,66 @@
                         </div>
                     </div>
                 </div>
-                </td>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">GET </span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-5">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-5" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                GET 
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Content Type: null</p>
+                                <h5>Response Body</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-FAILURE">
+
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-ERROR">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.48s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.53s</em></span></td>
                 </tr>
 
             </table>

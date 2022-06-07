@@ -85,7 +85,7 @@ public class RestfulBookerSteps {
                 .auth().preemptive().basic("admin","password123")
                 .pathParam("BookingId",BookingId)
                 .when()
-                .get(EndPoints.CREATE_SINGLE_BOOKING)
+                .get(EndPoints.GET_SINGLE_BOOKING_BY_ID)
                 .then();
     }
 

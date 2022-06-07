@@ -45,7 +45,7 @@ public class RestfulBookerTestWithSteps extends TestBase {
                         depositpaid,bookingdates );
                 response.log().all().statusCode(200);
 
-                bookingId = response.log().all().extract().path("id");
+                bookingId = response.log().all().extract().path("bookingid");
                 System.out.println(bookingId);
 
         }
@@ -74,7 +74,7 @@ public class RestfulBookerTestWithSteps extends TestBase {
         }
         @Test
         public void test004() {
-                restfulBookerSteps.deleteBooking(bookingId).statusCode(200);
+                restfulBookerSteps.deleteBooking(bookingId).statusCode(201);
                restfulBookerSteps.getbookingchangesById(bookingId).statusCode(404);
         }
 
